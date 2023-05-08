@@ -1,4 +1,7 @@
 {
   "item.future_craft.scrap_metal": "Scrap Metal",
+
+  "block.future_craft.scrap_metal_block": "Scrap Metal Block",
+
   "creativemodetab.future_craft_tab": "Future Craft"
 }

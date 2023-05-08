@@ -1,6 +1,7 @@
 package net.jwaterfall.futurecraft;
 
 import com.mojang.logging.LogUtils;
+import net.jwaterfall.futurecraft.block.ModBlocks;
 import net.jwaterfall.futurecraft.item.ModCreativeModeTabs;
 import net.jwaterfall.futurecraft.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -26,6 +27,7 @@ public class FutureCraft
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -45,9 +47,15 @@ public class FutureCraft
             event.accept(ModItems.SCRAP_METAL);
         }
 
+        if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS)
+        {
+            event.accept(ModBlocks.SCRAP_METAL_BLOCK);
+        }
+
         if(event.getTab() == ModCreativeModeTabs.FUTURE_CRAFT_TAB)
         {
             event.accept(ModItems.SCRAP_METAL);
+            event.accept(ModBlocks.SCRAP_METAL_BLOCK);
         }
     }
 

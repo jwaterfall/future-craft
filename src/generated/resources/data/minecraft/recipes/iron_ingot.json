@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "future_craft:scrap_metal"
+    },
+    {
+      "item": "future_craft:scrap_metal"
+    },
+    {
+      "item": "future_craft:scrap_metal"
+    },
+    {
+      "item": "future_craft:scrap_metal"
+    },
+    {
+      "item": "future_craft:scrap_metal"
+    },
+    {
+      "item": "future_craft:scrap_metal"
+    },
+    {
+      "item": "future_craft:scrap_metal"
+    },
+    {
+      "item": "future_craft:scrap_metal"
+    },
+    {
+      "item": "future_craft:scrap_metal"
+    }
+  ],
+  "result": {
+    "item": "minecraft:iron_ingot"
+  }
+}
